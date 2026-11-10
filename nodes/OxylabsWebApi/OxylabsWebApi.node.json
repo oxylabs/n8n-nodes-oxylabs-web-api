@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-oxylabs-web-api.oxylabsWebApi",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/oxylabs/n8n-nodes-oxylabs-web-api?tab=readme-ov-file#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/oxylabs/n8n-nodes-oxylabs-web-api?tab=readme-ov-file"
+			}
+		]
+	}
+}
