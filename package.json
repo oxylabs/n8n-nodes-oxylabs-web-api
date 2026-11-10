@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-oxylabs-web-api",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"description": "n8n node for the Oxylabs Web API: search the web and scrape any page, including JavaScript-heavy and bot-protected ones.",
 	"license": "MIT",
 	"homepage": "https://github.com/oxylabs/n8n-nodes-oxylabs-web-api",
@@ -30,7 +30,8 @@
 		"prepublishOnly": "n8n-node prerelease"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"!dist/tsconfig.tsbuildinfo"
 	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
@@ -41,6 +42,11 @@
 		"nodes": [
 			"dist/nodes/OxylabsWebApi/OxylabsWebApi.node.js"
 		]
+	},
+	"release-it": {
+		"git": {
+			"tagName": "v${version}"
+		}
 	},
 	"devDependencies": {
 		"@n8n/node-cli": "*",
