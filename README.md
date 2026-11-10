@@ -36,9 +36,19 @@ The key is sent as `Authorization: Bearer <key>`. **Test** checks it with a free
 
 ## Compatibility
 
-Tested with n8n 2.x. Requires n8n with `n8nNodesApiVersion` 1.
+Tested with n8n 2.x (local `npm run dev`). Requires n8n with `n8nNodesApiVersion` 1.
 
 ## Usage
+
+### Examples
+
+**Research agent.** Add an **AI Agent** node with a chat model, and attach **Oxylabs Web API** as a tool twice: once with *Search the Web*, once with *Scrape a URL*. Click the sparkle next to **Query** and **URL** to let the model fill them in. The agent can then search for sources and read the pages it picks.
+
+**Read a list of pages.** Feed rows with a `url` column (for example from Google Sheets) into **Scrape a URL**, set **URL** to the expression `{{ $json.url }}` and **Format** to *Markdown*. Each row comes out with the page in its `markdown` field, ready for an LLM or a document store.
+
+**Pull fields out of a page.** In **Scrape a URL**, choose *Structured Data (JSON)* and describe the fields, for example *the book titles and their prices*. The item's `json` field holds the result.
+
+**Track Google results.** Start with a **Schedule Trigger**, then **Scraper > Run** with scraper `scrape/google/search`, **Parameters** `{"query": "best running shoes", "location": "US"}` and **Output** *Structured Data (JSON)*. Each run returns the parsed results page, which you can append to a sheet to watch rankings over time.
 
 ### Slow pages and queued scrapes
 
