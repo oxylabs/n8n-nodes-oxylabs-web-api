@@ -43,6 +43,9 @@
 			"dist/nodes/OxylabsWebApi/OxylabsWebApi.node.js"
 		]
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"release-it": {
 		"git": {
 			"tagName": "v${version}"
