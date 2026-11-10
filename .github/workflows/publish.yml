@@ -99,5 +99,3 @@ jobs:
           npm run release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          # Shows why npm could not authenticate, if it cannot.
-          NPM_CONFIG_LOGLEVEL: verbose
