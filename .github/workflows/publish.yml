@@ -80,6 +80,8 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'npm'
+          # Needed for npm Trusted Publishing: npm exchanges the GitHub OIDC token for this registry.
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: 'npm ci'
@@ -97,3 +99,5 @@ jobs:
           npm run release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # Shows why npm could not authenticate, if it cannot.
+          NPM_CONFIG_LOGLEVEL: verbose
