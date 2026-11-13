@@ -1,3 +1,5 @@
+[![Oxylabs promo code](https://github.com/oxylabs/n8n-nodes-oxylabs-web-api/blob/main/n8n%20nodes%20oxylabs%20web%20api.png)](https://oxylabs.io/products/web-api/scrape?utm_source=github&utm_medium=referral&utm_content=web_api_waitinglist&groupid=877)
+
 # n8n-nodes-oxylabs-web-api
 
 This is an n8n community node for the [Oxylabs Web API](https://oxylabs.io). It lets your workflows and AI agents search the live web and read any page, including JavaScript-heavy and bot-protected ones, as Markdown, HTML, a screenshot or structured JSON.
