@@ -1,5 +1,13 @@
 [![Oxylabs promo code](https://github.com/oxylabs/n8n-nodes-oxylabs-web-api/blob/main/n8n%20nodes%20oxylabs%20web%20api.png)](https://oxylabs.io/products/web-api/scrape?utm_source=github&utm_medium=referral&utm_content=web_api_waitinglist&groupid=877)
 
+<p align="left">
+  <a href="https://dashboard.oxylabs.io"><img src="https://img.shields.io/badge/%F0%9F%9A%80_Get_Started-FF6B35?style=for-the-badge" alt="Get started"></a>
+  <a href="https://developers.oxylabs.io/products/web-api"><img src="https://img.shields.io/badge/%F0%9F%93%9A_Documentation-4A90E2?style=for-the-badge" alt="Documentation"></a>
+  <a href="https://dashboard.oxylabs.io"><img src="https://img.shields.io/badge/%F0%9F%93%8A_Dashboard-2EA44F?style=for-the-badge" alt="Dashboard"></a>
+  <a href="https://discord.gg/Pds3gBmKMH"><img src="https://img.shields.io/badge/%F0%9F%92%AC_Discord-5865F2?style=for-the-badge" alt="Discord"></a>
+  <a href="https://www.youtube.com/@oxylabs"><img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8F_YouTube-FF0000?style=for-the-badge" alt="YouTube"></a>
+</p>
+
 # n8n-nodes-oxylabs-web-api
 
 This is an n8n community node for the [Oxylabs Web API](https://oxylabs.io). It lets your workflows and AI agents search the live web and read any page, including JavaScript-heavy and bot-protected ones, as Markdown, HTML, a screenshot or structured JSON.
